@@ -25,14 +25,13 @@ def login():
 	   	if user is not None and user.vertify_password(form.password.data):
 	   		login_user(user,form.remember_me.data)
 	   		return redirect(request.args.get('next') or url_for('main.index'))
-	   	flash('Invalid password and username')
+	   	flash(u'无效的用户名或密码')
     return render_template('auth/login.html',form=form)
 
 @auth.route('/logout')
 @login_required
 def logout():
 	logout_user()
-	flash('You have been log out')
 	return redirect(url_for('main.index'))
 
 @auth.route('/register',methods=['GET','POST'])
