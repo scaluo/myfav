@@ -1,0 +1,9 @@
+Dear {{user.username}},
+Welcome to micro blog
+
+to confirm your account ,please click blow link
+{{url_for('auth.confirm',token=token,_external=true)}}
+
+Thank you!
+
+

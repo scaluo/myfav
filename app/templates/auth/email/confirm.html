@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>confirm email</title>
+</head>
+<body>
+<p>Dear {{user.username}},</p>
+<p>Welcome to micro blog</p>
+
+<p>to confirm your account ,please click blow link</p>
+<p>{{url_for('auth.confirm',token=token,_external=true)}}</p>
+
+<p>Thank you!</p>
+</body>
+</html>
+
