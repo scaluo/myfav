@@ -12,4 +12,4 @@ python manage.py runserver
 
 运行效果图
 
-[!image](https://raw.githubusercontent.com/scaluo/myfav/master/app/static/images/webshot.png)
+![image](https://raw.githubusercontent.com/scaluo/myfav/master/app/static/images/webshot.png)
